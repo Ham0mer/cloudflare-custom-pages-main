@@ -1,0 +1,39 @@
+{
+    "name": "@jksb/cloudflare-custom-pages",
+    "version": "1.0.0",
+    "description": "A Cloudflare Custom Pages template for JK.SB",
+    "main": "index.html",
+    "scripts": {
+        "start": "serve"
+    },
+    "keywords": [
+        "html",
+        "css"
+    ],
+    "license": "MIT",
+    "prettier": "@raflymln/prettier-config",
+    "eslintConfig": {
+        "settings": {
+            "import/extensions": [
+                ".ts",
+                ".tsx"
+            ]
+        },
+        "extends": [
+            "@raflymln/eslint-config"
+        ],
+        "rules": {
+            "tailwindcss/no-custom-classname": [
+                "error",
+                {
+                    "cssFiles": []
+                }
+            ]
+        }
+    },
+    "devDependencies": {
+        "@raflymln/eslint-config": "^1.2.1",
+        "@raflymln/prettier-config": "^1.0.0",
+        "eslint": "^7.2.0"
+    }
+}
